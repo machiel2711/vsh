@@ -1,0 +1,120 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CTFPlayer::GetMaxAmmo"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer10GetMaxAmmoEii"
+				"windows"	"\x55\x8B\xEC\x8B\x45\x0C\x56\x57\x8B\xF9\x83\xF8\xFF\x75\x2A\xFF\xB7\x2A\x2A\x2A\x2A\xEB\x01\x50\xE8"
+			}
+			"CTFPlayer::GetEquippedWearableForLoadoutSlot"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer33GetEquippedWearableForLoadoutSlotEi"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x2A\x8B\xC1\x53\x56\x33\xF6\x89\x45\xF8\x8B\x88\x2A\x2A\x2A\x2A\x57\x89\x4D\xFC"
+			}
+			"CTFPlayer::PlaySpecificSequence"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer20PlaySpecificSequenceEPKc"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x30\x53\x56\x8B\x75\x08\x57\x56\x8B\xF9\xE8\x2A\x2A\x2A\x2A\x8B\xD8\x83\xFB\xFF\x74\x2A\x8B\x35\x2A\x2A\x2A\x2A\x8B\xCE\x8B\x16\xFF\x52\x2A\x8B\x8F\x2A\x2A\x2A\x2A\x53\x6A\x13\x8B\x01\xFF\x50"
+			}
+			"CTFPlayer::AddObject"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer9AddObjectEP11CBaseObject"
+				"windows"	"\x55\x8B\xEC\x53\x56\x57\x8B\x7D\x08\x8B\xD9\x85\xFF\x74\x2A\x8B\x07\x8B\xCF\xFF\x50\x08\x8B\xCF"
+			}
+			"CTFPlayer::RemoveObject"
+			{
+				"library"	"server"
+				"linux"		"@_ZN9CTFPlayer12RemoveObjectEP11CBaseObject"
+				"windows"	"\x55\x8B\xEC\x8B\xD1\x56\x8B\xB2\x8C\x21\x00\x00"
+			}
+			"CWeaponMedigun::AllowedToHealTarget"
+			{
+				"library"	"server"
+				"linux"		"@_ZN14CWeaponMedigun19AllowedToHealTargetEP11CBaseEntity"
+				"windows"	"\x55\x8B\xEC\x53\x8B\xD9\x56\x57\x8B\xB3\xE8\x01\x00\x00"
+			}
+			"CObjectDispenser::CouldHealTarget"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CObjectDispenser15CouldHealTargetEP11CBaseEntity"
+				"windows"	"\x55\x8B\xEC\x56\x8B\x75\x08\x57\x8B\xF9\x8B\x87\x10\x01\x00\x00"
+			}
+		}
+		"Functions"
+		{
+			"CWeaponMedigun::AllowedToHealTarget"
+			{
+				"signature"	"CWeaponMedigun::AllowedToHealTarget"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"entity"
+				"arguments"
+				{
+					"target"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			"CObjectDispenser::CouldHealTarget"
+			{
+				"signature"	"CObjectDispenser::CouldHealTarget"
+				"callconv"	"thiscall"
+				"return"	"bool"
+				"this"		"entity"
+				"arguments"
+				{
+					"target"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+		}
+		"Offsets"
+		{
+			"CTFGameRules::GetCaptureValueForPlayer"
+			{
+				"linux"		"154"
+				"windows"	"153"
+			}
+			"CBaseEntity::ShouldTransmit"
+			{
+				"linux"		"19"
+				"windows"	"18"
+			}
+			"CTFPlayer::GiveNamedItem"
+			{
+				"linux"		"485"
+				"windows"	"478"
+			}
+			"CTFWeaponBase::SendWeaponAnim"
+			{
+				"linux"		"249"
+				"windows"	"243"
+			}
+			"CTFWeaponBase::GetMaxClip1"
+			{
+				"linux"		"324"
+				"windows"	"318"
+			}
+			"CTFStunBall::ApplyBallImpactEffectOnVictim"
+			{
+				"linux"		"261"
+				"windows"	"260"
+			}
+			"CTFStunBall::ShouldBallTouch"
+			{
+				"linux"		"263"
+				"windows"	"262"
+			}
+		}
+	}
+}
